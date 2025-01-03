@@ -1,3 +1,5 @@
+This read me file was initially created by react template project. I was using react for the first time so I used their default project and then was changing that from here. It's possible to just replace src folder in default template and it will work 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
