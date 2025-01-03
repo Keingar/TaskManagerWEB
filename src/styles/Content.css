@@ -1,0 +1,325 @@
+/* General Background for the Entire Page */
+body {
+  background-color: #121212;
+  margin: 0;  /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a default font */
+}
+
+/* Top Block 1 */
+.top-block-1 {
+  background-color: #282828;
+  height: 30px;
+}
+
+/* Top Block 2 */
+.top-block-2 {
+  margin-top: 10px;
+  height: 50px;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+/* Left side of top block (Plan Tasks button) */
+.top-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Right side of top block (Search, Sort, Filter buttons) */
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;  /* Space between buttons */
+  flex-grow: 1;  /* Allow the right side to expand */
+}
+
+/* Buttons */
+.button {
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 0 10px;
+  border: none;
+  box-shadow: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  height: 50px;
+}
+
+.button-plan-tasks {
+  background-color: #90caf9;
+  color: black;
+  width: 190px;
+}
+
+.button-search, .button-sort, .button-filter {
+  background-color: #434343;
+  color: white;
+  width: 80px;
+}
+
+.button:hover {
+  background-color: #434343;
+}
+
+/* Input */
+.input-search {
+  flex-grow: 1;  /* Take the remaining width */
+  height: 40px;
+  border-radius: 4px;
+  background-color: #1f1f1f;
+  color: #808080;
+  padding-left: 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+.input-search:focus {
+  background-color: #000000;
+  color: white;
+}
+
+/* Popup styles */
+.popup {
+  position: absolute;
+  top: 100px;  /* Adjust to position it correctly */
+  background-color: #434343;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 370px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;  /* Ensure popup is above other elements */
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;  /* Stack the label and input vertically */
+}
+
+/* Text labels inside separate divs for clarity */
+.form-group .label {
+  color: white;
+  margin-bottom: 5px;
+}
+
+/* Input boxes (search and description) take full width */
+.input-search, .input-description {
+  width: 100%;  /* Full width for inputs */
+  background-color: #1f1f1f;
+  color: #808080;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+/* Description input with larger height */
+.input-description {
+  height: 200px;  /* Increased height for description */
+  resize: vertical;  /* Allow resizing */
+}
+
+/* Button styles */
+.button-create-task {
+  background-color: #282828;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px; /* Space between input fields and the button */
+}
+
+.button-create-task:hover {
+  background-color: #434343;
+}
+
+/* Add styles for task list visualization */
+.block-3 {
+  margin-top: 20px;
+  background-color: #121212;
+  padding: 20px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task {
+  background-color: #434343;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.task h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.task p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.app-container {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Task Card Styles */
+.task-card {
+  margin: 0 80px 50px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #2d2d2d;
+  color: white;
+  position: relative;  /* Ensure it's within the stacking context */
+
+}
+
+/* Top of Task Card (4 horizontal divs) */
+.task-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.task-card-title {
+  flex: 1;
+}
+
+.task-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+.task-card-date {
+  flex: 1;
+  text-align: right; /* Aligns the content to the right */
+
+}
+
+.task-date {
+  font-size: 18px;
+  color: white;
+}
+
+.task-card-button {
+  position: relative; /* Add relative positioning to the parent container */
+
+}
+
+.progress-button,
+.edit-button {
+  background-color: #434343;
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+  width: 80px;
+  height: 40px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.popup-content {
+  display: none; /* Hide popup by default */
+  position: absolute; /* Absolute positioning for the popup */
+  top: 40px; /* Adjust this value based on where you want the popup to appear */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the popup horizontally */
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10; /* Make sure the popup appears above other content */
+  width: 150px; /* Adjust width as needed */
+}
+
+.progress-button:hover + .popup-content,
+.edit-button:hover + .popup-content {
+  display: block;
+}
+
+/* Bottom of Task Card (progress bar) */
+.task-card-bottom {
+  display: flex;
+  flex-direction: column;
+  position: relative;  /* Ensure it's within the stacking context */
+  z-index: 1;  /* Lower z-index than popup */
+
+}
+.task-card-description {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 8px;
+  white-space: normal;   /* Allow the text to wrap */
+  word-wrap: break-word; /* Break long words if necessary */
+  word-break: break-word; /* Break words to prevent overflow */
+  line-height: 1.5;      /* Adjust line height for better readability */
+}
+
+.task-card-middle {
+  margin-bottom: 5;
+}
+
+.task-date {
+  margin-bottom: 5;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 20px; /* Adjust this value to match your design */
+  background-color: #e0e0e0; /* Light background for the empty progress bar */
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0; /* This color is visible even when empty */
+  border-radius: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #90caf9; /* Filled progress color */
+  border-radius: 10px;
+}
+
+.progress-text-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px; /* Space between the progress bar and the text */
+}
+
+.progress-text {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+

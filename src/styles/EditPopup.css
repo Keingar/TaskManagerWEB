@@ -1,0 +1,109 @@
+/* EditPopup.css */
+
+/* Edit Popup Container */
+.edit-popup-container {
+    position: relative;
+  }
+  
+  .edit-popup {
+    position: absolute;
+    right: 0;  /* Align the popup to the right of the button */
+    top: 100%; /* Place the popup below the button */
+    min-width: 300px;
+    background-color: #434343;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;  /* Ensure the popup is above other content */
+  }
+
+  .edit-popup input {
+    width: 90%; /* Let the inputs take the full width */
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .edit-popup label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Button inside Edit Popup */
+  .edit-popup-button {
+    background-color: #282828;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Space between fields and the button */
+  }
+  
+  .edit-popup-button:hover {
+    background-color: #434343;
+  }
+
+  .delete-button {
+    background-color: #ff0000;
+  }
+  
+  .delete-button:hover {
+    background-color: #d50000;  /* Darker red for delete button hover */
+  }
+
+  .edit-popup-label {
+    color: white;
+    width: 30%;  /* Labels take up 30% of the width */
+  }
+  
+  .edit-popup-input {
+    width: 90%;  /* Inputs and selects take up 90% of the available width */
+    padding: 8px;
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .edit-popup-textarea {
+    height: 100px;  /* Larger height for the description input */
+    resize: vertical;
+  }
+
+  .edit-popup-input[type="date"] {
+    width: 45%; /* Adjust width for the date picker */
+  }
+
+  .edit-popup-input[type="number"] {
+    width: 45%; /* Adjust width for the number input */
+  }
+
+  .edit-popup-row {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Edit Popup for BOOL task type */
+.edit-popup BOOL-checkbox-wrapper {
+    display: flex;
+    align-items: center; /* Align items horizontally */
+    gap: 10px; /* Space between checkbox and text */
+  }
+  
+  /* Style for the checkbox to make it bigger */
+  .edit-popup input[type="checkbox"] {
+    width: 25px; /* Increase checkbox size */
+    height: 25px; /* Increase checkbox size */
+    margin-right: 10px; /* Space between checkbox and text */
+  }
+  
